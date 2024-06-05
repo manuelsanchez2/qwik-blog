@@ -1,6 +1,12 @@
-# Readme
+<div align="center">
 
-To be done properly
+<img src="./public/home.png" width="300" alt="Home Qwik Blog" />
+
+# Fancy Blog done with Qwik
+
+See deployment [here](https://qwik-blog-delta.vercel.app/)
+
+</div>
 
 ## 👨🏻‍🎨 Design
 
