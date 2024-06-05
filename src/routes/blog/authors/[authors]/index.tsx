@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
-import { Link, loader$, useNavigate } from "@builder.io/qwik-city";
+import { Link, routeLoader$, useNavigate } from "@builder.io/qwik-city";
 import { getAuthorBySlug, getPostsByAuthor } from "~/utils";
 
-export const usePostsByAuthor = loader$(({ params }) => {
+export const usePostsByAuthor = routeLoader$(({ params }) => {
   try {
     return getPostsByAuthor(params.authors);
   } catch (error) {
@@ -11,7 +11,7 @@ export const usePostsByAuthor = loader$(({ params }) => {
   }
 });
 
-export const useAuthorBySlug = loader$(({ params }) => {
+export const useAuthorBySlug = routeLoader$(({ params }) => {
   try {
     return getAuthorBySlug(params.authors);
   } catch (error) {
@@ -47,7 +47,7 @@ export default component$(() => {
         Back Buttonchen
       </button>
       <h1>Author: {author.name}</h1>
-      <img src={author.imgSrc} alt={author.name} />
+      <img width={200} height={200} src={author.imgSrc} alt={author.name} />
       <div>Todos estos son los posts que ha escrito {author.name}</div>
       <ul>
         {authorPosts.map((post) => (

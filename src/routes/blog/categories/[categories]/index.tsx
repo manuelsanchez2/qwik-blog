@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
-import { Link, loader$, useLocation, useNavigate } from "@builder.io/qwik-city";
+import { Link, routeLoader$, useLocation, useNavigate } from "@builder.io/qwik-city";
 import { getPostsByCategoryName } from "~/utils";
 
-export const usePostsByCategory = loader$(({ params }) => {
+export const usePostsByCategory = routeLoader$(({ params }) => {
   try {
     return getPostsByCategoryName(params.categories);
   } catch (error) {

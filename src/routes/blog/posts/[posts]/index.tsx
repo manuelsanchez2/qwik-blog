@@ -1,8 +1,8 @@
 import { component$, Slot } from "@builder.io/qwik";
-import { Link, loader$ } from "@builder.io/qwik-city";
+import { Link, routeLoader$ } from "@builder.io/qwik-city";
 import { getAuthorBySlug, getPostBySlug } from "~/utils";
 
-export const usePostsBySlug = loader$(({ params }) => {
+export const usePostsBySlug = routeLoader$(({ params }) => {
   try {
     return getPostBySlug(params.posts);
   } catch (error) {
@@ -11,7 +11,7 @@ export const usePostsBySlug = loader$(({ params }) => {
   }
 });
 
-export const useAuthorBySlug = loader$(({ params }) => {
+export const useAuthorBySlug = routeLoader$(({ params }) => {
   try {
     return getAuthorBySlug(getPostBySlug(params.posts).authorSlug);
   } catch (error) {
@@ -29,7 +29,7 @@ export default component$(() => {
       <h1>
         Title of the post: <strong>{post.title}</strong>
       </h1>
-      <img src={author.imgSrc} alt="" />
+      <img width={200} height={200} src={author.imgSrc} alt="" />
       <p>Summary: {post.summary}</p>
       <time>Created at: {post.createdAt}</time>
       <div>Author: {post.author || author.name}</div>
