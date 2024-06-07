@@ -1,6 +1,7 @@
 {
-  "name": "my-qwik-basic-starter",
-  "description": "App with Routing built-in (recommended)",
+  "name": "blog-qwik",
+  "description": "Blog example using Qwik",
+  "version": "0.3.0",
   "engines": {
     "node": ">=15.0.0"
   },

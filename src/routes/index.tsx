@@ -9,6 +9,7 @@ import {
   VectorBlueVerticalPill,
   VectorLoopArrow,
 } from '~/components/vectors/vectors'
+import { APP_VERSION } from '~/constants/constants'
 
 export default component$(() => {
   return (
@@ -69,6 +70,8 @@ export default component$(() => {
             >
               <IconArrowRight />
             </ActionTrigger>
+
+            <div class="mb-12">Version {APP_VERSION}</div>
           </div>
           {/* List all the categories */}
           {/* <section>
