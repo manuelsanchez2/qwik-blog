@@ -10,6 +10,7 @@ import {
   VectorLoopArrow,
 } from '~/components/vectors/vectors'
 import { APP_VERSION } from '~/constants/constants'
+import { React } from '~/components/icons/icons'
 
 export default component$(() => {
   return (
@@ -72,6 +73,10 @@ export default component$(() => {
             </ActionTrigger>
 
             <div class="mb-12">Version {APP_VERSION}</div>
+            <div>
+              
+            </div>
+           
           </div>
           {/* List all the categories */}
           {/* <section>
