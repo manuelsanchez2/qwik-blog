@@ -56,6 +56,10 @@
   @apply !text-blogPurpleDark !bg-blogPurplePrimary border-purple-dark shadow-purple-dark;
 }
 
+.shadow-dark {
+  box-shadow: 3px 3px 0px black;
+}
+
 .shadow-turquoise-dark {
   box-shadow: 3px 3px 0px var(--blog-turquoise-dark);
 }
@@ -75,6 +79,7 @@
 .shadow-purple-dark {
   box-shadow: 3px 3px 0px var(--blog-purple-dark);
 }
+
 
 .border-turquoise-primary {
   border-color: var(--blog-turquoise-primary);
