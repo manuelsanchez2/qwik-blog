@@ -16,7 +16,7 @@ export const CardHorizontal = component$(() => {
                 <h1 class="font-bold text-3xl">
                 ¿Por qué forEach es más rápido que for en JavaScript?
                 </h1>
-                <h2 class="font-semibold text-lg">
+                <h2 class="font-semibold leading-tight line-clamp-2 text-lg">
                 Mucha gente cree, de forma equivocada, que for es la forma más rápida de hacer bucles en JavaScript...
                 </h2>
                 <div class="flex w-full mt-6 px-4 justify-between items-center">
