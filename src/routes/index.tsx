@@ -12,6 +12,7 @@ import {
 import { APP_VERSION } from '~/constants/constants'
 import { React } from '~/components/icons/icons'
 import { CardHorizontal } from '~/components/cards/card-horizontal'
+import { CardVertical } from '~/components/cards/card-vertical'
 
 export default component$(() => {
   return (
@@ -21,6 +22,11 @@ export default component$(() => {
         <DebugGrid hidden />
 
         <ContainerMedium>
+          <CardHorizontal />
+          <div class="mt-10">
+              <CardVertical />
+          </div>
+
           <div class="flex flex-col items-center justify-center min-h-screen gap-10">
             <div class="flex flex-col gap-4 md:flex-row">
               <VectorLoopArrow class="max-w-[200px] h-auto" />
@@ -74,8 +80,8 @@ export default component$(() => {
             </ActionTrigger>
 
             <div class="mb-12">Version {APP_VERSION}</div>
-            <CardHorizontal />
-           
+            
+
           </div>
           {/* List all the categories */}
           {/* <section>

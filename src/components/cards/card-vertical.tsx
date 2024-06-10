@@ -2,18 +2,17 @@ import { component$ } from "@builder.io/qwik";
 import { ActionTrigger } from '~/components/action-trigger/action-trigger'
 import { IconArrowRight } from '~/components/icons/icons'
 
-export const CardHorizontal = component$(() => {
+export const CardVertical = component$(() => {
 
 
     return (
-        <div class="border-black shadow-dark rounded-3xl gap-6 border-[3px] h-[350px] p-6 flex justify-between">
-            <img class="rounded-2xl w-1/2" src="src\components\placeholderImg\man-smiling.png" />
-            <div class="flex flex-col w-1/2 gap-2">
+        <div class="border-black  shadow-dark rounded-3xl gap-6 border-[3px] w-[500px] p-6 flex flex-col justify-between">
+            <img class="rounded-2xl w-full" src="src\components\placeholderImg\man-smiling.png" />
+            <div class="flex flex-col w-full gap-2">
                 <ul class="flex gap-4">
-                    <li class="border-[3px] rounded-xl px-2 py-2 text-blogYellowDark font-semibold bg-blogYellowPrimary border-blogYellowDark">JavaScript</li>
-                    <li class="border-[3px] rounded-xl px-2 py-2 text-blogOrangeDark font-semibold bg-blogOrangePrimary border-blogOrangeDark">HTML</li>
+                    <li class="border-[3px] rounded-xl text-blogTurquoiseDark font-semibold px-6 py-2 bg-blogTurquoisePrimary border-blogTurquoiseDark">React</li>
                 </ul>
-                <h1 class="font-bold text-3xl">
+                <h1 class="font-bold font-sans text-4xl leading-[3.5rem]">
                 ¿Por qué forEach es más rápido que for en JavaScript?
                 </h1>
                 <h2 class="font-semibold text-lg">

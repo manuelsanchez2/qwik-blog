@@ -30,6 +30,16 @@
   --blog-purple-dark: #ac7ef4;
 }
 
+@layer base {
+  @font-face {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  }
+}
+
 .btn {
   @apply inline-flex gap-2 px-2 py-2 bg-blogGrayPrimary border-2 text-black border-black rounded-xl text-xs font-semibold hover:-translate-y-1 focus:-translate-y-1 transition-transform;
 
