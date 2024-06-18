@@ -3,6 +3,7 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
+
       colors: {
         blogGrayPrimary: '#e5e7eb',
         blogGrayDark: '#d1d5db',
