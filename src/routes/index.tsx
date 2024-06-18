@@ -11,6 +11,7 @@ import {
 } from '~/components/vectors/vectors'
 import { APP_VERSION } from '~/constants/constants'
 import { React } from '~/components/icons/icons'
+import { CardHorizontal } from '~/components/cards/card-horizontal'
 
 export default component$(() => {
   return (
@@ -73,9 +74,7 @@ export default component$(() => {
             </ActionTrigger>
 
             <div class="mb-12">Version {APP_VERSION}</div>
-            <div>
-              
-            </div>
+            <CardHorizontal />
            
           </div>
           {/* List all the categories */}
