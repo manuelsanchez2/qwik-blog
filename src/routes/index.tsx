@@ -1,18 +1,18 @@
-import { component$ } from '@builder.io/qwik'
-import { type DocumentHead } from '@builder.io/qwik-city'
-import { ActionTrigger } from '~/components/action-trigger/action-trigger'
-import { Container, ContainerMedium } from '~/components/container/container'
-import { DebugGrid } from '~/components/debug-grid/debug-grid'
-import { DebugSize } from '~/components/debug-size/debug-size'
-import { IconArrowRight } from '~/components/icons/icons'
+import { component$ } from "@builder.io/qwik";
+import { type DocumentHead } from "@builder.io/qwik-city";
+import { ActionTrigger } from "~/components/action-trigger/action-trigger";
+import { Container, ContainerSmall } from "~/components/container/container";
+import { DebugGrid } from "~/components/debug-grid/debug-grid";
+import { DebugSize } from "~/components/debug-size/debug-size";
+import { IconArrowRight } from "~/components/icons/icons";
 import {
   VectorBlueVerticalPill,
   VectorLoopArrow,
-} from '~/components/vectors/vectors'
-import { APP_VERSION } from '~/constants/constants'
-import { React } from '~/components/icons/icons'
-import { CardHorizontal } from '~/components/cards/card-horizontal'
-import { CardVertical } from '~/components/cards/card-vertical'
+} from "~/components/vectors/vectors";
+import { APP_VERSION } from "~/constants/constants";
+import { React } from "~/components/icons/icons";
+import { CardHorizontal } from "~/components/cards/card-horizontal";
+import { CardVertical } from "~/components/cards/card-vertical";
 
 export default component$(() => {
   return (
@@ -21,10 +21,32 @@ export default component$(() => {
         <DebugSize />
         <DebugGrid hidden />
 
-        <ContainerMedium>
-          <CardHorizontal />
+        <ContainerSmall>
+          <CardHorizontal
+            imgAlt={"random image"}
+            imgSrc={"src/components/placeholderImg/man-smiling.png"}
+            tags={["JavaScript", "HTML"]}
+            publishedDate={"Sat 4, March 2024"}
+            author={1}
+            slug={"life-is-easy"}
+            title={"¿Why is forEach faster than for in JavaScript?"}
+            description={
+              "Many people claim that they know the fastest way to do loops with JavaScript. However, it might come to a surprise if we tell you that it is not gold everything that shines!."
+            }
+          />
           <div class="mt-10">
-              <CardVertical />
+            <CardVertical
+              slug={"life-is-easy"}
+              author={2}
+              imgAlt={"random image"}
+              imgSrc={"src/components/placeholderImg/man-smiling.png"}
+              tags={["JavaScript", "HTML"]}
+              publishedDate={"Sat 4, March 2024"}
+              title={"¿Why is forEach faster than for in JavaScript?"}
+              description={
+                "Many people claim that they know the fastest way to do loops with JavaScript. However, it might come to a surprise if we tell you that it is not gold everything that shines!."
+              }
+            />
           </div>
 
           <div class="flex flex-col items-center justify-center min-h-screen gap-10">
@@ -80,8 +102,6 @@ export default component$(() => {
             </ActionTrigger>
 
             <div class="mb-12">Version {APP_VERSION}</div>
-            
-
           </div>
           {/* List all the categories */}
           {/* <section>
@@ -132,18 +152,18 @@ export default component$(() => {
               </div>
             ))}
           </section> */}
-        </ContainerMedium>
+        </ContainerSmall>
       </Container>
     </div>
-  )
-})
+  );
+});
 
 export const head: DocumentHead = {
-  title: 'Blog with Qwik',
+  title: "Blog with Qwik",
   meta: [
     {
-      name: 'description',
-      content: 'Cool blog with Qwik',
+      name: "description",
+      content: "Cool blog with Qwik",
     },
   ],
-}
+};

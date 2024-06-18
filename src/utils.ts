@@ -25,6 +25,9 @@ export function getAuthorBySlug(slug: string): any | undefined {
   return authors.find((author) => author.slug === slug);
 }
 
+export const getAuthorById = (id: number) =>
+  authors.find((author) => author.id === id);
+
 /**
  *
  * Functions to get categories
