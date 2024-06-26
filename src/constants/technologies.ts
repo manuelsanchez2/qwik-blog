@@ -19,6 +19,7 @@ export const technologies = [
       tagClasses:
         "bg-blogYellowPrimary border-blogYellowDark text-blogYellowDark",
       icon: JavaScript,
+      color: "yellow",
     },
     html: {
       id: 2,
@@ -28,6 +29,7 @@ export const technologies = [
       tagClasses:
         "bg-blogTurquoisePrimary border-blogTurquoiseDark text-blogTurquoiseDark",
       icon: HTML,
+      color: "orange",
     },
     css: {
       id: 3,
@@ -37,6 +39,7 @@ export const technologies = [
       tagClasses:
         "bg-blogTurquoisePrimary border-blogTurquoiseDark text-blogTurquoiseDark",
       icon: CSS,
+      color: "blue",
     },
     qwik: {
       id: 4,
@@ -46,6 +49,7 @@ export const technologies = [
       tagClasses:
         "bg-blogPurplePrimary border-blogPurpleDark text-blogPurpleDark",
       icon: Qwik,
+      color: "purple",
     },
     react: {
       id: 5,
@@ -55,6 +59,7 @@ export const technologies = [
       tagClasses:
         "bg-blogTurquoisePrimary border-blogTurquoiseDark text-blogTurquoiseDark",
       icon: React,
+      color: "turquoise",
     },
     git: {
       id: 6,
@@ -64,6 +69,7 @@ export const technologies = [
       tagClasses:
         "bg-blogTurquoisePrimary border-blogTurquoiseDark text-blogTurquoiseDark",
       icon: Git,
+      color: "orange",
     },
     typescript: {
       id: 7,
@@ -73,6 +79,7 @@ export const technologies = [
       tagClasses:
         "bg-blogTurquoisePrimary border-blogTurquoiseDark text-blogTurquoiseDark",
       icon: TypeScript,
+      color: "blue",
     },
     performance: {
       id: 8,
@@ -82,6 +89,7 @@ export const technologies = [
       tagClasses:
         "bg-blogYellowPrimary border-blogYellowDark text-blogYellowDark",
       icon: Performance,
+      color: "yellow",
     },
   },
 ];

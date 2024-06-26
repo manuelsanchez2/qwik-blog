@@ -11,8 +11,7 @@ import {
 } from "~/components/vectors/vectors";
 import { APP_VERSION } from "~/constants/constants";
 import { React } from "~/components/icons/icons";
-import { CardHorizontal } from "~/components/cards/card-horizontal";
-import { CardVertical } from "~/components/cards/card-vertical";
+import { Card } from "~/components/cards/card";
 
 export default component$(() => {
   return (
@@ -22,7 +21,7 @@ export default component$(() => {
         <DebugGrid hidden />
 
         <ContainerSmall>
-          <CardHorizontal
+          <Card
             imgAlt={"random image"}
             imgSrc={"src/components/placeholderImg/man-smiling.png"}
             tags={["JavaScript", "HTML"]}
@@ -33,9 +32,10 @@ export default component$(() => {
             description={
               "Many people claim that they know the fastest way to do loops with JavaScript. However, it might come to a surprise if we tell you that it is not gold everything that shines!."
             }
+            layout={"horizontal"}
           />
           <div class="mt-10">
-            <CardVertical
+            <Card
               slug={"life-is-easy"}
               author={2}
               imgAlt={"random image"}
@@ -46,9 +46,9 @@ export default component$(() => {
               description={
                 "Many people claim that they know the fastest way to do loops with JavaScript. However, it might come to a surprise if we tell you that it is not gold everything that shines!."
               }
+              layout={"vertical"}
             />
           </div>
-
           <div class="flex flex-col items-center justify-center min-h-screen gap-10">
             <div class="flex flex-col gap-4 md:flex-row">
               <VectorLoopArrow class="max-w-[200px] h-auto" />
@@ -116,7 +116,6 @@ export default component$(() => {
               ))}
             </div>
           </section> */}
-
           {/* List all the posts */}
           {/* <section>
             <h2 class="text-xl font-bold">All posts listed</h2>
