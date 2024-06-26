@@ -43,5 +43,8 @@
     "vercel": "^34.2.5",
     "vite": "5.2.12",
     "vite-tsconfig-paths": "4.3.2"
+  },
+  "dependencies": {
+    "motion": "^10.18.0"
   }
 }
