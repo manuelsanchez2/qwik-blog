@@ -42,7 +42,7 @@ export default component$(() => {
                 return category.map((tech) => {
                   return (
                     <li
-                      class="flex flex-col gap-3 items-center text-center"
+                      class="flex flex-col gap-3 items-center text-center opacity-0"
                       key={tech.id}
                     >
                       <a
