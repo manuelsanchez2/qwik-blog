@@ -20,7 +20,7 @@ export const CardVertical = component$<ICard>(
     if (!authorData) return null;
 
     return (
-      <div class="border-black  shadow-dark rounded-3xl gap-6 border-[3px] w-[500px] p-6 flex flex-col justify-between">
+      <div class="border-black  shadow-dark rounded-3xl gap-6 border-[3px] max-w-[500px] w-full p-6 flex flex-col justify-between">
         <img
           width={600}
           height={300}

@@ -20,15 +20,15 @@ export const CardHorizontal = component$<ICard>(
     if (!authorData) return null;
 
     return (
-      <div class="border-black shadow-dark rounded-3xl gap-6 border-[3px] h-[350px] p-6 flex justify-between">
+      <div class="border-black shadow-dark rounded-3xl gap-6 border-[3px] sm:h-[350px] max-w-[500px] sm:max-w-full p-6 flex flex-col sm:flex-row justify-between">
         <img
-          width={400}
+          width={600}
           height={300}
-          class="rounded-2xl w-1/2"
+          class="rounded-2xl sm:w-1/2"
           src={imgSrc}
           alt={imgAlt}
         />
-        <div class="flex flex-col w-1/2 gap-2">
+        <div class="flex flex-col sm:w-1/2 gap-2">
           <ul class="flex gap-4">
             {tags.map((tag) => {
               const technology = getTechnologyByKey(tag.toLowerCase());
